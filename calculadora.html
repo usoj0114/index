@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="icon.jpg">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="estilo/color.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .calculadora {
+      width: 220px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .fila-botones {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    input[type="button"] {
+      width: 50px;
+      height: 40px;
+      font-size: 18px;
+    }
+    input[type="text"] {
+      width: 100%;
+      height: 40px;
+      font-size: 18px;
+      text-align: right;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="cona.jpg" alt="Logo de Conalep" style="max-width: 100px; height: auto;">
+    <h1>Página de Venta de Computadoras armadas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html"><span class="material-symbols-outlined">home</span> Página Principal</a></li>
+        <li><a href="Pc.html"><span class="material-symbols-outlined">install_desktop</span> Computadoras</a></li>
+        <li><a href="Ram.html"><span class="material-symbols-outlined">memory</span> Memorias RAM</a></li>
+        <li><a href="Dd.html"><span class="material-symbols-outlined">disc_full</span> Discos Duros</a></li>
+        <li><a href="Ssd.html"><span class="material-symbols-outlined">sd_card</span> Discos SSD</a></li>
+        <li><a href="Procesadores.html"><span class="material-symbols-outlined">developer_board</span> Procesadores</a></li>
+        <li><a href="so.html"><span class="material-symbols-outlined">phone_iphone</span> Contacto</a></li>
+        <li><a href="mejores productos.html"><span class="material-symbols-outlined">star</span> Mejores Productos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="calculadora">
+    <h2>Calcula lo que quieras</h2>
+    <input type="text" id="pantalla" readonly>
+
+    <div class="fila-botones">
+      <input type="button" value="1" onclick="agregar('1')">
+      <input type="button" value="2" onclick="agregar('2')">
+      <input type="button" value="3" onclick="agregar('3')">
+      <input type="button" value="+" onclick="agregar('+')">
+    </div>
+    <div class="fila-botones">
+      <input type="button" value="4" onclick="agregar('4')">
+      <input type="button" value="5" onclick="agregar('5')">
+      <input type="button" value="6" onclick="agregar('6')">
+      <input type="button" value="*" onclick="agregar('*')">
+    </div>
+    <div class="fila-botones">
+      <input type="button" value="7" onclick="agregar('7')">
+      <input type="button" value="8" onclick="agregar('8')">
+      <input type="button" value="9" onclick="agregar('9')">
+      <input type="button" value="C" onclick="limpiar()">
+    </div>
+    <div class="fila-botones">
+      <input type="button" value="0" onclick="agregar('0')">
+      <input type="button" value="=" onclick="calcular()">
+    </div>
+  </div>
+
+  <script>
+    function agregar(valor) {
+      document.getElementById("pantalla").value += valor;
+    }
+
+    function calcular() {
+      try {
+        const resultado = eval(document.getElementById("pantalla").value);
+        document.getElementById("pantalla").value = resultado;
+      } catch (error) {
+        document.getElementById("pantalla").value = "Error";
+      }
+    }
+
+    function limpiar() {
+      document.getElementById("pantalla").value = "";
+    }
+  </script>
+</body>
+</html>

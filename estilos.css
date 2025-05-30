@@ -1,0 +1,231 @@
+body
+{
+font-family: Arial, Sams-serif;
+background-color:#fof3f7;
+color:#331;
+margin:0;
+}
+
+header
+{
+background-color:#2c3e50;
+color:#ecf0f1;
+padding: 15px;
+text-align:center;
+}
+
+header h1
+{
+margin:0;
+font-size:26pt;
+}
+
+nav ul
+{
+list-style:none;
+padding:0;
+margin:10px;
+}
+
+nav ul li
+{
+display: inline-block;
+margin:0 15px;
+}
+
+nav ul li a
+{
+color:#ecf0f1;
+text-decoration: none;
+font-size: 1.1 em;
+}
+
+nav ul li a: hover
+{
+color:#1abc9c;
+}
+
+main
+{
+padding: 20px;
+text-align: center;
+}
+
+main h2
+{
+color:#344095e;
+fonty-size: 1.8em;
+margin-lop: 0;
+}
+
+main p
+{
+font-size: 1.2em;
+}
+footer
+{
+background-color:#2c3e50;
+color:#ecf0f1;
+text-align: center;
+padding: 4px;
+position: fixed;
+width: 100%;
+bottom: 0;
+}
+table
+{
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: whithe;
+}
+th, td
+{
+ padding: 5px;
+ text-align: left;
+ border-bottom: 2px solid#ddd;
+}
+th
+{
+ background-color: #333;
+ color: white;
+}
+tr.hover
+{
+ background-color: #f1f1f1;
+}
+.product-img
+{
+ width: 100px;
+}
+
+.video-container
+{
+ max-width: 800px;
+ margin: auto;
+ padding: 10px; 
+ background-color: #fff;
+ border-radius: 20px;
+}
+
+.video-container video
+{
+ width: 100%;--+
+
+ height: Auto; 
+ border-radius: 10px;
+ border: 2px solid#00aaff;
+}
+form {
+   max-width: 400px;
+   margin: 0 auto;
+   font-family: Arial, sans-serif;
+}
+
+label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+input, select, textarea {
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 15px;
+   border: 1px solid #CCC;
+   border-radius: 4px;
+}
+
+input[type="submit"] {
+   background-color: #4caf50;
+   color: white;
+   border: none;
+   padding: 10px 15px;
+   cursor: pointer;
+}
+
+input[type="submit"]:hover {
+   background-color: #45a049;
+}
+.contenedor
+{
+display: flex;
+ justify-content: space-between;
+}
+.columna {
+    flex: 1;
+}
+
+iframe
+{
+    width: 100%;
+    height: 300px;
+}
+.boton-flotante
+{
+position: fixed;
+width: 50px;
+height: 50px;
+bottom: 20px;
+right: 20px;
+box-shadow: 1px 1px #ccc;
+border-radius: 50px;
+}
+.boton-flotante img
+{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+}
+.card-container
+{
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	gap: 10px;
+	justify-content: center;
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.card
+{
+	background-color:white;
+	border: 1px solid #ccc;
+	border-radius:8px;
+	padding:20px;
+	box-shadow: 2px 5px #888888;
+}
+
+.card h2
+{
+	color: #871a54;
+}
+
+.card p
+{
+	color: #666;
+}
+
+.card ul
+{
+	list-style-type: none;
+	padding: 0;
+	color: #1a3087;
+}
+
+button
+{
+	background-color: #28a745;
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 10px;
+}     
+
+button:hover
+{
+	background-color: #218838;
+}          

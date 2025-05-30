@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<img src="images/cspad.png" alt=" ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">GameStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#Catalogo">Catálogo</a>
+                    <a class="nav-link" href="#Promociones">Promociones</a>
+                    <a class="nav-link" href="#Contacto">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="bg-dark text-white text-center py-5 my-5">
+        <div class="container">
+            <p>Los mejores juegos al mejor precio</p>
+            <a href="#Catalogo" class="btn btn-light">Ver Catálogo</a>
+        </div>
+		
+    </header>
+
+    
+        <div class="container">
+            <h2>Catálogo de video juegos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagenes/Zelda.jpg" class="card-img-top" alt="Legend of Zelda">
+                        <div class="card-body">
+                            <h5 class="card-title">Legend of Zelda</h5>
+                            <p class="card-text">$1,400.00</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+          
+				<div class="col-md-4">
+					<div class="card" style="width: 18rem;">
+						<img src="imagenes/EdelRing.jpg" class="card-img-top" alt="Edel Ring">
+						<div class="card-body">
+							<h5 class="card-title">Edel Ring</h5>
+							<p class="card-text">$1,200.00</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+		  
+				<div class="col-md-4">
+					<div class="card" style="width: 18rem;">
+						<img src="imagenes/Tuners.jpg" class="card-img-top" alt="GTA">
+						<div class="card-body">
+							<h5 class="card-title">Grand Theft Auto V (GTA V)</h5>
+							<p class="card-text">$1,500.00</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+		  
+		  
+            </div>
+        </div>
+    </section>
+
+
+	<section id="Promociones" class="bg-light py-5">
+		<div class="Container">
+			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/fa24.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item"> 
+					<img src="images/tuners.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/EdelRing.jpg" class="d-block w-100" alt="...">
+				</div>
+				</div>
+			</div>
+		</div>
+		
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Anterior</span>
+		</button>
+    
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Siguiente</span>
+		</button>
+	</section>
+</body>
+</html>
